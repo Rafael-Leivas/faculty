@@ -82,6 +82,16 @@ for letter in arrayName:
         reset()
 
     if 'd' == letter:
+        forward(50)
+        left(180)
+        forward(50)
+        right(90)
+        forward(100)
+        right(90)
+        forward(50)
+        right(90)
+        forward(100)
+        left(90)
         reset()
 
     if 'e' == letter:
@@ -536,3 +546,7 @@ for letter in arrayName:
         fd(90)
         clear()
         reset()
+
+    if ' ' == letter:
+        delay(20)
+        continue
