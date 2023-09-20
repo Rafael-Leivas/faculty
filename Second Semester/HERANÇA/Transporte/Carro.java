@@ -10,10 +10,11 @@ public class Carro extends Automoveis{
     }
 
     public boolean equals(Object o) {
-        Carro aux = (Carro) o;
-
-        if (this.placa.equals(aux.placa)) {
-            return true;
+        if(o.getClass().equals(Carro.class)) {
+            Carro outro = (Carro) o;
+            if (getPlaca().equals(outro.getPlaca())) {
+                return true;
+            }
         }
         return false;
     }
