@@ -3,7 +3,7 @@ public class Onibus extends Transporte {
     private String empresa;
     private int numAssentos;
     
-    public Onibus(int placa, String marca, String empresa, int numAssentos) {
+    public Onibus(String placa, String marca, String empresa, int numAssentos) {
         super(placa, marca);
 
         this.empresa = empresa;

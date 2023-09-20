@@ -1,9 +1,9 @@
 public class  Transporte {
 
-    private int placa;
+    protected String placa;
     private String marca;
 
-    public Transporte(int placa, String marca) {
+    public Transporte(String placa, String marca) {
         this.placa = placa;
         this.marca = marca;
     }
@@ -12,7 +12,7 @@ public class  Transporte {
         this.placa = placa;
     }
 
-    public int getPlaca() {
+    public String getPlaca() {
         return placa;
     }
 

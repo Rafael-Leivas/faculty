@@ -1,14 +1,21 @@
 public class Main {
     public static void main(String[] args) {
 
-        Carro c = new Carro(111, "Porshe", "Branco", "Uno", 4);
+        Carro carro1 = new Carro("UHAOS", "Porshe", "Branco", "Uno", 4);
+        Carro carro2 = new Carro("OKJNA", "Ferrari", "Vermelha", "Puro Sangue", 4);
+        Carro carro3 = new Carro("UHAOS", "Porshe", "Branco", "Uno", 4);
 
-        Moto m = new Moto(6969, "Honda", "Preto", "Hornet");
+        System.out.println(carro1.equals(carro2));
+        System.out.println(carro1.equals(carro3));
+        System.out.println(carro2.equals(carro3));
+        System.out.println("------------");
 
-        Onibus o = new Onibus(88, "Mercedez", "Jotur", 40);
+        Moto m = new Moto("6969", "Honda", "Preto", "Hornet");
 
-        System.out.println(c);
-        c.acelerar();
+        Onibus o = new Onibus("88", "Mercedez", "Jotur", 40);
+
+        System.out.println(carro1);
+        carro1.acelerar();
         System.out.println("------------");
         System.out.println(m);
         m.acelerar();

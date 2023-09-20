@@ -1,7 +1,7 @@
 
 public class Moto extends Automoveis {
 
-    public Moto(int placa, String marca, String cor, String modelo) {
+    public Moto(String placa, String marca, String cor, String modelo) {
         super(placa, marca, cor, modelo);
     }
 
