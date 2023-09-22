@@ -19,6 +19,7 @@ while True:
   if opcao == '1':
     print(f"Quantidade de solicitações na fila principal: {len(codigos)}")
   elif opcao == '2':
+    print("----------------------------------------------------")
     print(f"Solicitações aguardando: {len(codigos)}")
     
     pendencias = []
@@ -45,11 +46,12 @@ while True:
           pendencias.append(codigo)
           print(f"Código {codigo} não validado.")
       else:
+          print("------------------------------------------------")
           print("Opção inválida. Utilize S ou N para validar ou não validar.")
 
-      print("Todos os códigos foram verificados.")
-      print(f"O número de horas foi: {user1}")
-      print(f"Os arquivos não aceitos foram: {pendencias}")
+    print("Todos os códigos foram verificados.")
+    print(f"O número de horas foi: {user1}")
+    print(f"Os arquivos não aceitos foram: {pendencias}")
 
   elif opcao == '3':
     codigos = []
@@ -79,8 +81,10 @@ while True:
     print("Códigos válidos inseridos:", codigos)
 
   elif opcao == '4':
+    print("------------------------------------------")
     print(f"Os códigos recusados foram: {pendencias}")
   elif opcao == '5':
+    ("-------------------------------------------------------------")
     print(f"O número da matricula: {matricula}, teve {user1} horas")
   elif opcao == '6':
     break
@@ -99,6 +103,7 @@ while True:
   opcao = input("Escolha uma opção: ")
 
   if opcao == '1':
+    print("----------------------------------------------------------------")
     print(f"Quantidade de solicitações na fila principal: {len(codigos)}")
   elif opcao == '2':
     print(f"Solicitações aguardando: {len(codigos)}")
@@ -161,12 +166,13 @@ while True:
     print("Códigos válidos inseridos:", codigos)
 
   elif opcao == '4':
+    print("-----------------------------------------")
     print(f"Os códigos recusados foram: {pendencias}")
   elif opcao == '5':
+    print("---------------------------------------------------------")
     print(f"O número da matricula: {matricula}, teve {user2} horas")
   elif opcao == '6':
     break
-
 
 while True:
   ainda = int(input("[sair 0] Digite 1 para ver o resultado o usuário 1 ou 2 para ver o resultado do usuário 2: "))
