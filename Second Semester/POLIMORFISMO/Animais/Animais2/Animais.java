@@ -1,4 +1,4 @@
-public class Animais {
+public abstract class Animais {
     
     private double metrosPercorridos;
 
@@ -14,8 +14,6 @@ public class Animais {
         return this.metrosPercorridos;
     }
 
-    public void mover(int segundos)  {
-        
-    }
+    public abstract void mover(int segundos);
 
 }
