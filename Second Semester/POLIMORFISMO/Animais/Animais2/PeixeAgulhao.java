@@ -5,6 +5,7 @@ public class PeixeAgulhao extends Animais {
         setMetrosPercorridos(0);
     }
 
+    @Override
     public void mover(int segundos) {
         if (segundos > 0) {
             double distancia = VELOCIDADE_KMH * 1000 / 3600 * segundos;

@@ -14,4 +14,8 @@ public class Animais {
         return this.metrosPercorridos;
     }
 
+    public void mover(int segundos)  {
+        
+    }
+
 }
