@@ -20,5 +20,8 @@ public class Simulador {
 
             System.out.println();
         }
+
+        Convercacao c = new FalcaoPeregrino();
+        c.falar();
     }
 } // fim da classe Simulador

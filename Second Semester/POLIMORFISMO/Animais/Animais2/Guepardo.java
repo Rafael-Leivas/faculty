@@ -1,5 +1,10 @@
-public class Guepardo extends Animais{
+public class Guepardo extends Animais implements Convercacao{
     private static final int VELOCIDADE_KMH = 130;
+
+    @Override
+    public void falar(){
+        System.out.println("Raw Raw.");
+    }
 
     public Guepardo() {
         setMetrosPercorridos(0);

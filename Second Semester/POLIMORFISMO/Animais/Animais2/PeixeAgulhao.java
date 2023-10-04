@@ -1,5 +1,10 @@
-public class PeixeAgulhao extends Animais {
+public class PeixeAgulhao extends Animais implements Convercacao{
     private static final int VELOCIDADE_KMH = 115;
+
+    @Override
+    public void falar(){
+        System.out.println("Glub Glub.");
+    }
 
     public PeixeAgulhao() {
         setMetrosPercorridos(0);

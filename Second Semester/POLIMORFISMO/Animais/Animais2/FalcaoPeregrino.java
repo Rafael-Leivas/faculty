@@ -1,5 +1,10 @@
-public class FalcaoPeregrino extends Animais {
+public class FalcaoPeregrino extends Animais implements Convercacao{
     private static final int VELOCIDADE_KMH = 390;
+
+    @Override
+    public void falar(){
+        System.out.println("Piu Piu.");
+    }
     
     public FalcaoPeregrino() {
         setMetrosPercorridos(0);
