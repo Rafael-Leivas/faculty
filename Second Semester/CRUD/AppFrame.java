@@ -10,6 +10,7 @@ public class AppFrame extends JFrame {
     private JPanel cardPanel;
 
     private TarefaListPanel tarefaListPanel;
+    private TarefaFormPanel tarefaFormPanel;
 
     public AppFrame() {
         super(TITULO);
@@ -33,6 +34,9 @@ public class AppFrame extends JFrame {
 
     private void criarCards() {
         //TODO: criar painéis
+        this.tarefaFormPanel = new TarefaFormPanel();
+        cardPanel.add(this.tarefaFormPanel, TarefaFormPanel.class.getName());
+        
         this.tarefaListPanel = new TarefaListPanel();
         cardPanel.add(this.tarefaListPanel, TarefaListPanel.class.getName());
     }

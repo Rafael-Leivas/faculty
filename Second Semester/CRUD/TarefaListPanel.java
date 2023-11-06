@@ -3,6 +3,7 @@ import java.awt.Button;
 import java.awt.FlowLayout;
 
 import javax.swing.JButton;
+import javax.swing.JTable;
 import javax.swing.JPanel;
 
 public class TarefaListPanel extends JPanel{
@@ -10,6 +11,8 @@ public class TarefaListPanel extends JPanel{
     private JButton novaTarefaBtn;
     private JButton editarTarefaBtn;
     private JButton removerTarefaBtn;
+
+    private JTable tabela;
 
 
     public TarefaListPanel() {
@@ -37,7 +40,12 @@ public class TarefaListPanel extends JPanel{
     }
     
     private void criarTabelaPanel() {
-        
+        JPanel panel = new JPanel();
+
+        tabela = new JTable();
+        panel.add(tabela);
+
+        add(panel, BorderLayout.CENTER);
     }
 
 } // Fim da classe TarefaListPanel
