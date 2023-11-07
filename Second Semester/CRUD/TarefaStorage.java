@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class TarefaStorage {
 
-    private ArrayList<Tarefa> tarefas;
+    private static ArrayList<Tarefa> tarefas = new ArrayList<Tarefa>();
     private static int incremento;
 
     public TarefaStorage() {
@@ -10,19 +10,19 @@ public class TarefaStorage {
         incremento = 1;
     }
 
-    public void inserir(Tarefa tarefa) {
-        tarefa.setId(this.incremento++);
+    public static void inserir(Tarefa tarefa) {
+        tarefa.setId(incremento++);
         tarefas.add(tarefa);
     }
 
-    public void atualizar(Tarefa tarefa) {
+    public static void atualizar(Tarefa tarefa) {
         int indice = tarefas.indexOf(tarefa);
         if (indice >= 0)
             tarefas.set(indice, tarefa);
     }
 
-    public void remover(Tarefa tarefa) {
-        this.tarefas.remove(tarefa);
+    public static void remover(Tarefa tarefa) {
+        tarefas.remove(tarefa);
     }
 
     public ArrayList<Tarefa> listar() {

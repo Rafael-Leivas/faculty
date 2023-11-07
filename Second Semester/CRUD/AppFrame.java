@@ -34,11 +34,11 @@ public class AppFrame extends JFrame {
 
     private void criarCards() {
         //TODO: criar painéis
-        this.tarefaFormPanel = new TarefaFormPanel();
-        cardPanel.add(this.tarefaFormPanel, TarefaFormPanel.class.getName());
-        
         this.tarefaListPanel = new TarefaListPanel();
         cardPanel.add(this.tarefaListPanel, TarefaListPanel.class.getName());
+        
+        this.tarefaFormPanel = new TarefaFormPanel();
+        cardPanel.add(this.tarefaFormPanel, TarefaFormPanel.class.getName());
     }
 
 }

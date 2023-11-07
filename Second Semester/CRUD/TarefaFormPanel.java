@@ -5,12 +5,14 @@ import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JTextField;
 import javax.swing.JScrollPane;
+import javax.swing.JOptionPane;
 
 import java.awt.GridBagLayout;
 import java.awt.FlowLayout;
 import java.awt.GridBagConstraints;
 import java.awt.Insets;
-import java.awt.FlowLayout;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class TarefaFormPanel extends JPanel {
     private static final Insets REJUNTE = new Insets(5, 10, 0, 0);
@@ -54,10 +56,24 @@ public class TarefaFormPanel extends JPanel {
 
         criarSalvarBtn(btnPanel);
         criarCancelarBtn(btnPanel);
+
+        adicionarComponente(btnPanel, 6, 1);
     }
 
     public void criarSalvarBtn(JPanel btnPanel) {
         salvarBtn = new JButton("Salvar");
+        salvarBtn.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Tarefa tarefa = new Tarefa();
+                tarefa.setNome(nomeTxt.getText());
+                tarefa.setDescricao(descricaoTxa.getText());
+
+                TarefaStorage.inserir(tarefa);
+
+                JOptionPane.showMessageDialog(TarefaFormPanel.this, "Tarefa criada com sucesso!", AppFrame.TITULO, JOptionPane.INFORMATION_MESSAGE);
+            }
+        });
         btnPanel.add(salvarBtn);        
     }
 
