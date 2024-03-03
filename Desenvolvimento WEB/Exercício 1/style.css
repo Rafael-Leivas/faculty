@@ -107,7 +107,6 @@ body {
   gap: 10px;
   display: flex;
   padding: 0px 0 15px 0px;
-
 }
 
 .termos label {
@@ -121,11 +120,10 @@ body {
 }
 
 .imagens img {
-  width: 25rem;
-  height: 25rem;
+  width: 20em;
+  height: 20em;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-
 }
 
 .imagens img:hover {
@@ -139,10 +137,10 @@ body {
 }
 
 .video-audio iframe {
-  width: 25rem;
-  height: 15rem;
+  width: 20em;
+  height: 10em;
   border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .video-audio iframe:hover {
