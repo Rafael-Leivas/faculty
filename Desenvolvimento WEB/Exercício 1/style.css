@@ -120,8 +120,8 @@ body {
 }
 
 .imagens img {
-  width: 20em;
-  height: 20em;
+  width: 15em;
+  height: 15em;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -137,7 +137,7 @@ body {
 }
 
 .video-audio iframe {
-  width: 20em;
+  width: 15em;
   height: 10em;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -150,8 +150,6 @@ body {
 footer {
   background-color: #ffff;
   padding: 40px 10%;
-  position: fixed;
-  bottom: 0;
   width: 100%;
 }
 
